@@ -1,0 +1,14 @@
+.contact {
+  margin-bottom: $headerHeight;
+
+  &__input {
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semibold);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid $first-color-alt;
+    outline: none;
+    margin-bottom: 2.5rem;
+  }
+}
