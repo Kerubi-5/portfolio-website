@@ -10,11 +10,10 @@ const About = () => {
         <title>About</title>
       </Head>
       <section className="about section" id="about">
-        <span className="section__subtitle">My Intro</span>
+        <span className="section__subtitle">Introduction</span>
         <h2 className="section__title">About me</h2>
 
         <div className="about__container container grid">
-          {"image here"}
           <div className="about__data">
             <div className="about__info">
               <div className="about__box">
@@ -36,7 +35,12 @@ const About = () => {
               </div>
             </div>
 
-            <p className="about_description">I am a front developer</p>
+            <p className="about_description">
+              I am looking for a position that would utilize my developer skills
+              which allows me to continue learning and hone my skills to provide
+              high-quality work, and encourages me to flourish as a professional
+              developer in the IT Field.
+            </p>
           </div>
         </div>
       </section>
