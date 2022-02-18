@@ -1,7 +1,40 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import catto from "../assets/catto.png";
+import { FiExternalLink } from "react-icons/fi";
+
 const Works = () => {
+  const works = [
+    {
+      name: "Web design",
+      img: catto,
+      demo: "https://www.youtube.com/watch?v=oy8dSsK57Ps&t=4536s",
+    },
+  ];
+  const renderCards = () => {
+    return works.map((work) => {
+      return (
+        <div className="work__card" key={work.name}>
+          <Image
+            src={work.img}
+            alt={work.name}
+            layout="responsive"
+            width={"500px"}
+            className="work__img"
+          />
+          <h3 className="work__title">{work.name}</h3>
+          <Link href={work.demo}>
+            <a className="work__button">
+              Demo
+              <FiExternalLink />
+            </a>
+          </Link>
+        </div>
+      );
+    });
+  };
+
   return (
     <>
       <Head>
@@ -13,18 +46,7 @@ const Works = () => {
 
         <div className="work__filters"></div>
 
-        <div className="work__container container grid">
-          <div className="work__card">
-            <Image
-              src={catto}
-              alt="catto"
-              layout="responsive"
-              width={"500px"}
-            />
-            <h3 className="work__title">{"title"}</h3>
-            <a href="">Demo</a>
-          </div>
-        </div>
+        <div className="work__container container grid">{renderCards()}</div>
       </section>
     </>
   );
