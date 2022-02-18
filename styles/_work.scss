@@ -1,0 +1,28 @@
+.work {
+  &__container {
+    padding-top: 1rem;
+  }
+  &__card {
+    background-color: $container-color;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  &__img {
+    border-radius: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  &__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.25rem;
+  }
+
+  &__button {
+    width: max-content;
+    color: $first-color;
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+  }
+}

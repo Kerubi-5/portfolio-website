@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  background-color: $first-color;
+  color: $body-color;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: 0.4s;
+  &--ghost {
+    background-color: transparent;
+    border: 2px solid $first-color;
+    color: $first-color;
+  }
+  &:hover {
+    background-color: $first-color-alt;
+    color: $body-color;
+  }
+}

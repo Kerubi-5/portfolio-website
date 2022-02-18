@@ -1,0 +1,57 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $body-color;
+  z-index: $z-fixed;
+}
+
+.nav {
+  height: $headerHeight;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: $first-color;
+  font-weight: var(--font-medium);
+  transition: 0.4s;
+  &:hover {
+    color: $first-color-alt;
+  }
+}
+
+.nav__menu {
+  position: fixed;
+  bottom: 1rem;
+  background-color: hsla($secondary-hue, 32%, 16%, 0.8);
+  width: 90%;
+  border-radius: 4rem;
+  padding: 1rem 2.25rem;
+  backdrop-filter: blur(10px);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  color: $text-color;
+  font-size: 1.25rem;
+  padding: 0.4rem;
+  display: flex;
+  border-radius: 5rem;
+
+  &.active {
+    background: linear-gradient(
+      180deg,
+      hsla($hue, 66%, 75%, 1),
+      hsla($hue, 66%, 75%, 0.2)
+    );
+    box-shadow: 0 0 16px hsla($hue, 66%, 75%, 0.4);
+  }
+}

@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: $headerHeight 0 0 0;
+  font-family: $poppins;
+  font-size: var(--normal-font-size);
+  background-color: $body-color;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3 {
+  color: $title-color;
+  font-weight: var(--font-semibold);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $first-color;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

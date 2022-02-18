@@ -1,0 +1,37 @@
+.skills {
+  &__container {
+    row-gap: 2rem;
+    padding-top: 1rem;
+  }
+  &__content {
+    background-color: $container-color;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+  }
+  &__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: $first-color;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 2.5rem;
+  }
+  &__data {
+    display: flex;
+    column-gap: 0.5rem;
+  }
+  &__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 14px;
+  }
+  &__level {
+    font-size: var(--tiny-font-size);
+  }
+  margin-bottom: 5rem;
+}
