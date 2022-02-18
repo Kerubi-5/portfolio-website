@@ -1,4 +1,5 @@
 .home {
+  margin-bottom: 5rem;
   &__container {
     position: relative;
     row-gap: 4.5rem;
@@ -12,13 +13,19 @@
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
   }
-
   &__greeting {
     display: block;
     color: $title-color;
     margin-bottom: 0.25rem;
   }
-
+  &__handle {
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+    max-width: 200px;
+    max-height: 200px;
+  }
   &__education {
     color: $text-color;
     margin-bottom: 2.5rem;
@@ -30,9 +37,9 @@
     gap: 1.5rem;
   }
   &__social {
-    position: absolute;
-    bottom: 5rem;
-    left: 0;
+    position: fixed;
+    bottom: 50vh;
+    left: 1rem;
     display: grid;
     row-gap: 0.5rem;
     &-link {

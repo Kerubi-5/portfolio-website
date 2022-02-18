@@ -3,6 +3,8 @@ import { UilGithub } from "@iconscout/react-unicons";
 import { UilFacebook } from "@iconscout/react-unicons";
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
+import coder from "../assets/codes.png";
 
 export default function Home() {
   return (
@@ -32,11 +34,13 @@ export default function Home() {
               </Link>
             </div>
           </div>
-
           <div className="home__handle">
-            <h1>Picture</h1>
+            <Image
+              className="home__img"
+              src={coder}
+              alt="computer with html tags"
+            />
           </div>
-
           <div className="home__social">
             <Link href="https://www.linkedin.com/in/john-kim-querobines-4507521b8/">
               <a className="home__social-link">
