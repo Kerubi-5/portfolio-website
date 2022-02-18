@@ -43,17 +43,17 @@ export default function Home() {
           </div>
           <div className="home__social">
             <Link href="https://www.linkedin.com/in/john-kim-querobines-4507521b8/">
-              <a className="home__social-link">
+              <a className="home__social-link" target="_blank">
                 <UilLinkedin />
               </a>
             </Link>
             <Link href="https://github.com/Kerubi-5">
-              <a className="home__social-link">
+              <a className="home__social-link" target="_blank">
                 <UilGithub />
               </a>
             </Link>
             <Link href="https://www.facebook.com/mr.jkimpot/">
-              <a className="home__social-link">
+              <a className="home__social-link" target="_blank">
                 <UilFacebook />
               </a>
             </Link>
