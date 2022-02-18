@@ -1,10 +1,14 @@
 import { UilAward } from "@iconscout/react-unicons";
 import { UilHtml5 } from "@iconscout/react-unicons";
 import { UilFire } from "@iconscout/react-unicons";
+import Head from "next/head";
 
 const About = () => {
   return (
     <>
+      <Head>
+        <title>About</title>
+      </Head>
       <section className="about section" id="about">
         <span className="section__subtitle">My Intro</span>
         <h2 className="section__title">About me</h2>

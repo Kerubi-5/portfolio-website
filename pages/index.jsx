@@ -2,10 +2,14 @@ import { UilLinkedin } from "@iconscout/react-unicons";
 import { UilGithub } from "@iconscout/react-unicons";
 import { UilFacebook } from "@iconscout/react-unicons";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Home</title>
+      </Head>
       <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__data">

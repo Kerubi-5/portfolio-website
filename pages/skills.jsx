@@ -13,6 +13,7 @@ import {
   SiFirebase,
 } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
+import Head from "next/head";
 
 const Skills = () => {
   const levels = {
@@ -116,21 +117,26 @@ const Skills = () => {
   };
 
   return (
-    <section className="skills section" id="skills">
-      <span className="section__subtitle">My abilities</span>
-      <h2 className="section__title">My Experience</h2>
+    <>
+      <Head>
+        <title>Skills</title>
+      </Head>
+      <section className="skills section" id="skills">
+        <span className="section__subtitle">My abilities</span>
+        <h2 className="section__title">My Experience</h2>
 
-      <div className="skills__container container grid">
-        <div className="skills__content">
-          <h3 className="skills__title">Front End Technologies</h3>
-          <div className="skills__box">{skillsList(frontSkills)}</div>
+        <div className="skills__container container grid">
+          <div className="skills__content">
+            <h3 className="skills__title">Front End Technologies</h3>
+            <div className="skills__box">{skillsList(frontSkills)}</div>
+          </div>
+          <div className="skills__content">
+            <h3 className="skills__title">Back End Technologies</h3>
+            <div className="skills__box">{skillsList(backSkills)}</div>
+          </div>
         </div>
-        <div className="skills__content">
-          <h3 className="skills__title">Back End Technologies</h3>
-          <div className="skills__box">{skillsList(backSkills)}</div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
