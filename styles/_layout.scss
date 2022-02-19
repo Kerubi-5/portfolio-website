@@ -35,6 +35,7 @@ a,
 a:visited {
   text-decoration: none;
   color: $first-color;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button {
