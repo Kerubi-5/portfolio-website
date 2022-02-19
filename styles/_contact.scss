@@ -11,4 +11,54 @@
     outline: none;
     margin-bottom: 2.5rem;
   }
+  &__container {
+    row-gap: 3rem;
+    padding-bottom: 3rem;
+  }
+  &__title {
+    text-align: center;
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.5rem;
+  }
+  &__info {
+    display: grid;
+    gap: 1rem;
+  }
+  &__card {
+    background-color: $container-color;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+  }
+  &__card-icon {
+    font-size: 2rem;
+    color: $title-color;
+    margin-bottom: 0.25rem;
+  }
+  &__card-title,
+  &__card-data {
+    font-size: var(--small-font-size);
+  }
+  &__title {
+    font-weight: var(--font-medium);
+  }
+  &__card-data {
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  &__button {
+    color: $first-color;
+    font-size: var(--small-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.25rem;
+  }
+  &__button:hover &__button-icon {
+    transform: translateX(0.25rem);
+  }
+  &__button-icon {
+    font-size: 1rem;
+    transition: 0.4s;
+  }
 }

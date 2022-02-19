@@ -385,6 +385,76 @@ img {
   margin-bottom: 2.5rem;
 }
 
+.contact__container {
+  row-gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.contact__info {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact__card {
+  background-color: #151c28;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.contact__card-icon {
+  font-size: 2rem;
+  color: #f0f2f4;
+  margin-bottom: 0.25rem;
+}
+
+.contact__card-title, .contact__card-data {
+  font-size: var(--small-font-size);
+}
+
+.contact__title {
+  font-weight: var(--font-medium);
+}
+
+.contact__card-data {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.contact__button {
+  color: #b1e995;
+  font-size: var(--small-font-size);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.25rem;
+          column-gap: 0.25rem;
+}
+
+.contact__button:hover .contact__button-icon {
+  -webkit-transform: translateX(0.25rem);
+          transform: translateX(0.25rem);
+}
+
+.contact__button-icon {
+  font-size: 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .work__container {
   padding-top: 1rem;
 }
