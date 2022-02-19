@@ -35,17 +35,3 @@ $text-color: hsl($secondary-hue, 8%, 75%);
 $text-color-light: hsl($secondary-hue, 4%, 55%);
 $body-color: hsl($secondary-hue, 48%, 8%);
 $container-color: hsl($secondary-hue, 32%, 12%);
-
-@media screen and (min-width: 968px) {
-  :root {
-    --biggest-font-size: 2.5rem;
-    --h1-font-size: 2.25rem;
-    --biggest-font-size: 2.5rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
-}
