@@ -1,5 +1,4 @@
 .home {
-  margin-bottom: 5rem;
   &__container {
     position: relative;
     row-gap: 4.5rem;
@@ -15,7 +14,7 @@
   }
   &__greeting {
     display: block;
-    color: $title-color;
+    color: var(--title-color);
     margin-bottom: 0.25rem;
   }
   &__handle {
@@ -27,7 +26,7 @@
     max-height: 200px;
   }
   &__education {
-    color: $text-color;
+    color: var(--text-color);
     margin-bottom: 2.5rem;
   }
   &__buttons {
@@ -44,7 +43,7 @@
     row-gap: 0.5rem;
     &-link {
       width: max-content;
-      background-color: $container-color;
+      background-color: var(--container-color);
       color: $first-color;
       padding: 0.25rem;
       border-radius: 0.25rem;

@@ -25,14 +25,14 @@
     gap: 1rem;
   }
   &__card {
-    background-color: $container-color;
+    background-color: var(--container-color);
     padding: 1rem;
     border-radius: 0.75rem;
     text-align: center;
   }
   &__card-icon {
     font-size: 2rem;
-    color: $title-color;
+    color: var(--title-color);
     margin-bottom: 0.25rem;
   }
   &__card-title,

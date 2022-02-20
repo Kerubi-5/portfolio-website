@@ -3,10 +3,19 @@
 // SIZES
 $headerHeight: 3.5rem;
 
-// TYPOGRAPHY
+// FONT
 $poppins: "Poppins", sans-serif;
 
 :root {
+  // COLORS
+  --hue: 100;
+  --secondary-hue: 219;
+  --title-color: hsl(var(--secondary-hue), 15%, 95%);
+  --text-color: hsl(var(--secondary-hue), 8%, 75%);
+  --body-color: hsl(var(--secondary-hue), 48%, 8%);
+  --container-color: hsl(var(--secondary-hue), 32%, 12%);
+
+  // TYPOGRAPHY
   --biggest-font-size: 1.75rem;
   --h1-size: 1.5rem;
   --h1-font-size: 1.5rem;
@@ -26,12 +35,14 @@ $z-fixed: 100;
 $z-modal: 1000;
 
 // COLORS
-$hue: 100;
-$secondary-hue: 219;
-$first-color: hsl($hue, 66%, 75%);
-$first-color-alt: hsl($hue, 66%, 71%); /* -4% */
-$title-color: hsl($secondary-hue, 15%, 95%);
-$text-color: hsl($secondary-hue, 8%, 75%);
-$text-color-light: hsl($secondary-hue, 4%, 55%);
-$body-color: hsl($secondary-hue, 48%, 8%);
-$container-color: hsl($secondary-hue, 32%, 12%);
+
+$first-color: hsl(var(--hue), 66%, 75%);
+$first-color-alt: hsl(var(--hue), 66%, 71%); /* -4% */
+$text-color-light: hsl(var(--secondary-hue), 4%, 55%);
+
+body.light-theme {
+  --title-color: hsl(var(--secondary-hue), 15%, 15%);
+  --text-color: hsl(var(--secondary-hue), 8%, 35%);
+  --body-color: hsl(var(--secondary-hue), 100%, 99%);
+  --container-color: whitesmoke;
+}

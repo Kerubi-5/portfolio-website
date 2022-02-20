@@ -1,9 +1,10 @@
 .work {
+  margin-bottom: 5rem;
   &__container {
     padding-top: 1rem;
   }
   &__card {
-    background-color: $container-color;
+    background-color: var(--container-color);
     padding: 1rem;
     border-radius: 1rem;
   }
