@@ -211,20 +211,6 @@ img {
   margin-bottom: 0.25rem;
 }
 
-.home__handle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.home__img {
-  max-width: 200px;
-  max-height: 200px;
-}
-
 .home__education {
   color: var(--text-color);
   margin-bottom: 2.5rem;
@@ -241,6 +227,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5rem;
+}
+
+.home__handle {
+  margin: auto;
+  width: min(768px, 50vw);
+  height: min(200px, 50vw);
 }
 
 .home__social {

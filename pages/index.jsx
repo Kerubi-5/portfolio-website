@@ -4,7 +4,6 @@ import { UilFacebook } from "@iconscout/react-unicons";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import coder from "../assets/codes.png";
 
 export default function Home() {
   return (
@@ -21,8 +20,8 @@ export default function Home() {
 
             <div className="home__buttons">
               <a
-                download={"WEBDEV_CV_JKIM.pdf"}
-                href="../assets/WEBDEV_CV_JKIM.pdf"
+                download="WEBDEV_CV.pdf"
+                href="/assets/cv.pdf"
                 className="button button--ghost"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -37,8 +36,11 @@ export default function Home() {
           <div className="home__handle">
             <Image
               className="home__img"
-              src={coder}
+              src="/assets/codes.png"
               alt="computer with html tags"
+              width={200}
+              height={200}
+              layout="responsive"
             />
           </div>
           <div className="home__social">

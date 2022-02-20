@@ -17,14 +17,6 @@
     color: var(--title-color);
     margin-bottom: 0.25rem;
   }
-  &__handle {
-    display: flex;
-    justify-content: center;
-  }
-  &__img {
-    max-width: 200px;
-    max-height: 200px;
-  }
   &__education {
     color: var(--text-color);
     margin-bottom: 2.5rem;
@@ -34,6 +26,11 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+  }
+  &__handle {
+    margin: auto;
+    width: #{"min(768px, 50vw)"};
+    height: #{"min(200px, 50vw)"};
   }
   &__social {
     position: fixed;
