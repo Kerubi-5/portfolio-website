@@ -139,6 +139,22 @@ img {
           align-items: center;
 }
 
+.nav__toggle {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.nav__toggle:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: hsl(var(--hue), 66%, 75%);
+}
+
+.nav__toggle:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
 .nav__logo {
   color: hsl(var(--hue), 66%, 75%);
   font-weight: var(--font-medium);

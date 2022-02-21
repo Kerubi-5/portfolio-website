@@ -12,6 +12,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &__toggle {
+    transition: 0.4s;
+    &:hover {
+      transform: scale(1.2);
+      color: $first-color;
+    }
+    &:active {
+      transform: scale(0.8);
+    }
+  }
 }
 
 .nav__logo {

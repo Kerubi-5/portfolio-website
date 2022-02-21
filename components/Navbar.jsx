@@ -7,9 +7,10 @@ import { UilCrosshair } from "@iconscout/react-unicons";
 import { UilBriefcaseAlt } from "@iconscout/react-unicons";
 import { UilPhone } from "@iconscout/react-unicons";
 import { UilMoon } from "@iconscout/react-unicons";
+import { UilBrightness } from "@iconscout/react-unicons";
 import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   const router = useRouter();
   const activeLink = (route) => {
     return router.pathname === route ? "nav__link active" : "nav__link";
@@ -60,7 +61,17 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <UilMoon />
+        {darkMode ? (
+          <UilMoon
+            className="nav__toggle"
+            onClick={() => setDarkMode(!darkMode)}
+          />
+        ) : (
+          <UilBrightness
+            className="nav__toggle"
+            onClick={() => setDarkMode(!darkMode)}
+          />
+        )}
       </nav>
     </header>
   );
