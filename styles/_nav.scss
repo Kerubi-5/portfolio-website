@@ -36,7 +36,7 @@
 .nav__menu {
   position: fixed;
   bottom: 1rem;
-  background-color: hsla(var(--secondary-hue), 32%, 16%, 0.8);
+  background-color: var(--nav-color);
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
