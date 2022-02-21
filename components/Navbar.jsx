@@ -18,8 +18,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <header className="header" id="header">
       <nav className="nav container">
-        <Link href="/" className="nav__logo ">
-          <a>KK</a>
+        <Link href="/">
+          <a className="nav__logo">KK</a>
         </Link>
 
         <div className="nav__menu">
