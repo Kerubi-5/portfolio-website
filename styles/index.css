@@ -148,6 +148,7 @@ img {
 }
 
 .nav__toggle {
+  cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
