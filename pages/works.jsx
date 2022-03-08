@@ -30,6 +30,11 @@ const Works = () => {
       img: "/assets/chatapp.png",
       demo: "https://kk-chatting.web.app/",
     },
+    {
+      name: "KK Movies",
+      img: "/assets/kk-movies.png",
+      demo: "https://kk-movies.netlify.app/",
+    },
   ];
   const renderCards = () => {
     return works.map((work) => {
