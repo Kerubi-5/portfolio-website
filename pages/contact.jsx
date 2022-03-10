@@ -36,7 +36,7 @@ const Contact = () => {
       !form.current.Message.value ||
       !form.current.Email.value
     )
-      return alert("Must complete fields before submitting");
+      return alert("Must complete fields before submitting 🚫");
 
     emailjs
       .sendForm(
@@ -49,6 +49,7 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           e.target.reset();
+          alert("Email submitted, thanks for visiting my website 🔥");
         },
         (error) => {
           console.log(error.text);
