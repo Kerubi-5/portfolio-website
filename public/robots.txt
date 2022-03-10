@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kkwebdev.xyz
+
+# Sitemaps
+Sitemap: https://kkwebdev.xyz/sitemap.xml
