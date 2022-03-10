@@ -18,8 +18,10 @@ const About = () => {
             <div className="about__info">
               <div className="about__box">
                 <UilAward className="about__icon" />
-                <h3 className="about__title">Awards</h3>
-                <span className="about__subtitle">Awarded Many times</span>
+                <h3 className="about__title">Education</h3>
+                <span className="about__subtitle">
+                  Bachelors in Information Technology
+                </span>
               </div>
               <div className="about__box">
                 <UilHtml5 className="about__icon" />
@@ -30,7 +32,7 @@ const About = () => {
                 <UilFire className="about__icon" />
                 <h3 className="about__title">Passion</h3>
                 <span className="about__subtitle">
-                  A very passionate web developers
+                  A very passionate web developer
                 </span>
               </div>
             </div>
