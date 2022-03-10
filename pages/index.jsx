@@ -4,19 +4,33 @@ import { UilFacebook } from "@iconscout/react-unicons";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+import ReactTypingEffect from "react-typing-effect";
 
 export default function Home() {
+  const keywords = [
+    "A web developer",
+    "Creates web designs",
+    "Passionate Learner",
+    "Up to date with web technologies",
+  ];
+
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>John Kim A. Querobines</title>
       </Head>
       <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__data">
             <span className="home__greeting">Hello, I&apos;m </span>
-            <h1 className="home__name">Kerubi</h1>
-            <h3 className="home__education">Web Developer</h3>
+            <h1 className="home__name">John Kim A. Querobines</h1>
+            <h3 className="home__education">
+              <ReactTypingEffect
+                text={keywords}
+                typingDelay={500}
+                eraseDelay={1500}
+              />
+            </h3>
 
             <div className="home__buttons">
               <a
