@@ -30,6 +30,13 @@ const Contact = () => {
   ];
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log();
+    if (
+      !form.current.Name.value ||
+      !form.current.Message.value ||
+      !form.current.Email.value
+    )
+      return alert("Must complete fields before submitting");
 
     emailjs
       .sendForm(
