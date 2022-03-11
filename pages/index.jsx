@@ -35,7 +35,7 @@ export default function Home() {
             <div className="home__buttons">
               <a
                 download="WEBDEV_CV.pdf"
-                href="/assets/cv.pdf"
+                href="/assets/QUEROBINES_CV.pdf"
                 className="button button--ghost"
                 target="_blank"
                 rel="noopener noreferrer"
