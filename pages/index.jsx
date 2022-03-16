@@ -2,7 +2,6 @@ import { UilLinkedin } from "@iconscout/react-unicons";
 import { UilGithub } from "@iconscout/react-unicons";
 import { UilFacebook } from "@iconscout/react-unicons";
 import Link from "next/link";
-import Head from "next/head";
 import Image from "next/image";
 import ReactTypingEffect from "react-typing-effect";
 
@@ -16,9 +15,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>John Kim A. Querobines</title>
-      </Head>
       <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__data">

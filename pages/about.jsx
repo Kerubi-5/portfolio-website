@@ -6,9 +6,6 @@ import Head from "next/head";
 const About = () => {
   return (
     <>
-      <Head>
-        <title>About</title>
-      </Head>
       <section className="about section" id="about">
         <span className="section__subtitle">Introduction</span>
         <h2 className="section__title">About me</h2>

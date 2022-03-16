@@ -118,9 +118,6 @@ const Skills = () => {
 
   return (
     <>
-      <Head>
-        <title>Skills</title>
-      </Head>
       <section className="skills section" id="skills">
         <span className="section__subtitle">My abilities</span>
         <h2 className="section__title">My Experience</h2>

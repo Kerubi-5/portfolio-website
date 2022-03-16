@@ -62,9 +62,6 @@ const Works = () => {
 
   return (
     <>
-      <Head>
-        <title>Works</title>
-      </Head>
       <section className="work section" id="work">
         <span className="section__subtitle">My Portfolio</span>
         <h2 className="section__title">Recent works</h2>
