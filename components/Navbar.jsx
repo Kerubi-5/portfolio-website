@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-
 import { UilEstate } from "@iconscout/react-unicons";
 import { UilUser } from "@iconscout/react-unicons";
 import { UilCrosshair } from "@iconscout/react-unicons";
