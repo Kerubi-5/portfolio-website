@@ -63,7 +63,11 @@ const Contact = () => {
           {contact.icon}
           <h3 className="contact__card-title">{contact.name}</h3>
           <span className="contact__card-data">{contact.data}</span>
-          <a className="contact__button" href={contact.link}>
+          <a
+            className="contact__button"
+            href={contact.link}
+            aria-label={contact.name}
+          >
             Contact me <UilArrowRight className="contact__button-icon" />
           </a>
         </div>
