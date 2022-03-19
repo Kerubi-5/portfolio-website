@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
+import NaturalImage from "./../components/NaturalImage";
 
 const Works = () => {
   const works = [
@@ -40,14 +41,10 @@ const Works = () => {
     return works.map((work) => {
       return (
         <div className="work__card" key={work.name}>
-          <Image
-            src={work.img}
-            alt={work.name}
-            layout="responsive"
-            width={100}
-            height={100}
-            className="work__img"
-          />
+          <div className="work__img">
+            <NaturalImage src={work.img} alt={work.name} />
+          </div>
+
           <h3 className="work__title">{work.name}</h3>
           <Link href={work.demo}>
             <a className="work__button" aria-label={work.name}>
