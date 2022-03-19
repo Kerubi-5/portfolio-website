@@ -50,7 +50,7 @@ const Works = () => {
           />
           <h3 className="work__title">{work.name}</h3>
           <Link href={work.demo}>
-            <a className="work__button">
+            <a className="work__button" aria-label={work.name}>
               Demo
               <FiExternalLink />
             </a>
