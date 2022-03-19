@@ -2,7 +2,7 @@ import { UilLinkedin } from "@iconscout/react-unicons";
 import { UilGithub } from "@iconscout/react-unicons";
 import { UilFacebook } from "@iconscout/react-unicons";
 import Link from "next/link";
-import Image from "next/image";
+import NaturalImage from "../components/NaturalImage";
 import ReactTypingEffect from "react-typing-effect";
 
 export default function Home() {
@@ -44,13 +44,17 @@ export default function Home() {
             </div>
           </div>
           <div className="home__handle">
-            <Image
+            {/* <Image
               className="home__img"
               src="/assets/codes.png"
               alt="computer with html tags"
               width={200}
               height={200}
               layout="responsive"
+            /> */}
+            <NaturalImage
+              src="/assets/codes.png"
+              alt="computer with html tags"
             />
           </div>
           <div className="home__social">

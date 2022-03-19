@@ -256,8 +256,8 @@ img {
 
 .home__handle {
   margin: auto;
-  width: min(768px, 50vw);
-  height: min(200px, 50vw);
+  width: min(768px, 90vw);
+  height: min(200px, 85vw);
 }
 
 .home__social {
