@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Head from "next/head";
+import Meta from "../components/Meta";
 import { UilEnvelopeCheck } from "@iconscout/react-unicons";
 import { UilArrowRight } from "@iconscout/react-unicons";
 import { UilFacebookMessengerAlt } from "@iconscout/react-unicons";
@@ -76,6 +76,15 @@ const Contact = () => {
   };
   return (
     <>
+      <Meta
+        title="John Kim A. Querobines | Website Portfolio"
+        desc="I am an aspiring web developer who loves to create web designs and learn about the different web technologies and Im on the road to look for jobs that have like minded experts like me."
+        keywords={[
+          "John Kim A. Querobines, Website, Portfolio, Web Developer, KK",
+        ]}
+        image="/assets/jkim.png"
+        canonical="https://kkwebdev.xyz/contact"
+      />
       <section className="contact section" id="contact">
         <span className="section__subtitle">Send an email</span>
         <h3 className="section__title">Contact Form</h3>
