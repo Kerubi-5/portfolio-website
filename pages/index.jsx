@@ -35,23 +35,21 @@ export default function Home() {
                 className="button button--ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Downloads web developer curriculum vitae of John Kim"
               >
                 Download CV
               </a>
               <Link href="/about">
-                <a className="button button--ghost">About me</a>
+                <a
+                  className="button button--ghost"
+                  aria-label={"Read more about me"}
+                >
+                  About me
+                </a>
               </Link>
             </div>
           </div>
           <div className="home__handle">
-            {/* <Image
-              className="home__img"
-              src="/assets/codes.png"
-              alt="computer with html tags"
-              width={200}
-              height={200}
-              layout="responsive"
-            /> */}
             <NaturalImage
               src="/assets/codes.png"
               alt="computer with html tags"
@@ -59,17 +57,29 @@ export default function Home() {
           </div>
           <div className="home__social">
             <Link href="https://www.linkedin.com/in/john-kim-querobines-4507521b8/">
-              <a className="home__social-link" target="_blank">
+              <a
+                className="home__social-link"
+                target="_blank"
+                aria-label={"Go to John Kim's linked in account"}
+              >
                 <UilLinkedin />
               </a>
             </Link>
             <Link href="https://github.com/Kerubi-5">
-              <a className="home__social-link" target="_blank">
+              <a
+                className="home__social-link"
+                target="_blank"
+                aria-label={"Go to John Kim's github account"}
+              >
                 <UilGithub />
               </a>
             </Link>
             <Link href="https://www.facebook.com/mr.jkimpot/">
-              <a className="home__social-link" target="_blank">
+              <a
+                className="home__social-link"
+                target="_blank"
+                aria-label={"Go to John Kim's facebook account"}
+              >
                 <UilFacebook />
               </a>
             </Link>
