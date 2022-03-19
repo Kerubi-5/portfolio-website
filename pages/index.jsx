@@ -30,13 +30,13 @@ export default function Home() {
           <div className="home__data">
             <span className="home__greeting">Hello, I&apos;m </span>
             <h1 className="home__name">John Kim A. Querobines</h1>
-            <h3 className="home__education">
+            <h2 className="home__education">
               <ReactTypingEffect
                 text={keywords}
                 typingDelay={500}
                 eraseDelay={1500}
               />
-            </h3>
+            </h2>
 
             <div className="home__buttons">
               <a
