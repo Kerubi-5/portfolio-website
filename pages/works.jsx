@@ -21,11 +21,6 @@ const Works = () => {
       demo: "https://threejbgtech.herokuapp.com/",
     },
     {
-      name: "KK Vision Board",
-      img: "/assets/visionboard.png",
-      demo: "https://vision-board-kk.web.app/",
-    },
-    {
       name: "Chatting App",
       img: "/assets/chatapp.png",
       demo: "https://kk-chatting.web.app/",
