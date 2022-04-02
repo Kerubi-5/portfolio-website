@@ -30,6 +30,11 @@ const Works = () => {
       img: "/assets/kk-movies.png",
       demo: "https://kk-movies.netlify.app/",
     },
+    {
+      name: "dAPP Wave Portal",
+      img: "/assets/dappwave.png",
+      demo: "https://chimerical-crostata-4fcf35.netlify.app/",
+    },
   ];
   const renderCards = () => {
     return works.map((work) => {
