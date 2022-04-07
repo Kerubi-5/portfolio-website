@@ -2,7 +2,7 @@ import Meta from "../components/Meta";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import NaturalImage from "./../components/NaturalImage";
-import { fetchEntries } from "../util/contentfulWorks";
+import { fetchEntries } from "../util/contentfulPosts";
 
 const Works = ({ posts }) => {
   const renderCards = () => {
@@ -53,7 +53,7 @@ const Works = ({ posts }) => {
 };
 
 export async function getStaticProps() {
-  const res = await fetchEntries();
+  const res = await fetchEntries("works");
   const posts = await res.map((p) => p.fields);
   return {
     props: {
