@@ -2,51 +2,24 @@ import Meta from "../components/Meta";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import NaturalImage from "./../components/NaturalImage";
+import { fetchEntries } from "../util/contentfulWorks";
 
-const Works = () => {
-  const works = [
-    {
-      name: "Takda Planner",
-      img: "/assets/takda.png",
-      demo: "https://kk-scheduler.web.app/",
-    },
-    {
-      name: "Expense Tracker App",
-      img: "/assets/expense.png",
-      demo: "https://expense-tracker-d5897.firebaseapp.com/",
-    },
-    {
-      name: "Legal App Portal",
-      img: "/assets/legalapp.png",
-      demo: "https://threejbgtech.herokuapp.com/",
-    },
-    {
-      name: "Chatting App",
-      img: "/assets/chatapp.png",
-      demo: "https://kk-chatting.web.app/",
-    },
-    {
-      name: "KK Movies",
-      img: "/assets/kk-movies.png",
-      demo: "https://kk-movies.netlify.app/",
-    },
-    {
-      name: "dAPP Wave Portal",
-      img: "/assets/dappwave.png",
-      demo: "https://chimerical-crostata-4fcf35.netlify.app/",
-    },
-  ];
+const Works = ({ posts }) => {
   const renderCards = () => {
-    return works.map((work) => {
+    return posts.map((work) => {
+      console.log();
       return (
-        <div className="work__card" key={work.name}>
+        <div className="work__card" key={work.title}>
           <div className="work__img">
-            <NaturalImage src={work.img} alt={work.name} />
+            <NaturalImage
+              src={`https:${work.screenshot.fields.file.url}`}
+              alt={work.screenshot.fields.description}
+            />
           </div>
 
-          <h3 className="work__title">{work.name}</h3>
-          <Link href={work.demo}>
-            <a className="work__button" aria-label={work.name}>
+          <h3 className="work__title">{work.title}</h3>
+          <Link href={work.link}>
+            <a className="work__button" aria-label={work.title}>
               Demo
               <FiExternalLink />
             </a>
@@ -78,5 +51,15 @@ const Works = () => {
     </>
   );
 };
+
+export async function getStaticProps() {
+  const res = await fetchEntries();
+  const posts = await res.map((p) => p.fields);
+  return {
+    props: {
+      posts,
+    },
+  };
+}
 
 export default Works;
