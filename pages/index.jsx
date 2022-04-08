@@ -5,15 +5,9 @@ import Link from "next/link";
 import Meta from "../components/Meta";
 import NaturalImage from "../components/NaturalImage";
 import ReactTypingEffect from "react-typing-effect";
+import { fetchEntries } from "../util/contentfulPosts";
 
-export default function Home() {
-  const keywords = [
-    "A web developer",
-    "Creates web designs",
-    "Passionate Learner",
-    "Up to date with web technologies",
-  ];
-
+export default function Home({ posts }) {
   return (
     <>
       <Meta
@@ -25,14 +19,21 @@ export default function Home() {
         image="/assets/jkim.png"
         canonical="https://kkwebdev.xyz/"
       />
+      <video
+        className="home__video"
+        autoPlay
+        muted
+        loop
+        src={`https:${posts[0].video.fields.file.url}`}
+      />
       <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__data">
             <span className="home__greeting">Hello, I&apos;m </span>
-            <h1 className="home__name">John Kim A. Querobines</h1>
+            <h1 className="home__name">{posts[0].name}</h1>
             <h2 className="home__education">
               <ReactTypingEffect
-                text={keywords}
+                text={posts[0].descriptions}
                 typingDelay={500}
                 eraseDelay={1500}
               />
@@ -58,12 +59,6 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-          </div>
-          <div className="home__handle">
-            <NaturalImage
-              src="/assets/codes.png"
-              alt="computer with html tags"
-            />
           </div>
           <div className="home__social">
             <Link href="https://www.linkedin.com/in/john-kim-querobines-4507521b8/">
@@ -98,4 +93,14 @@ export default function Home() {
       </section>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetchEntries("landingPage");
+  const posts = await res.map((p) => p.fields);
+  return {
+    props: {
+      posts,
+    },
+  };
 }
