@@ -15,6 +15,7 @@ $poppins: "Poppins", sans-serif;
   --body-color: hsl(var(--secondary-hue), 48%, 8%);
   --container-color: hsl(var(--secondary-hue), 32%, 12%);
   --nav-color: hsla(var(--secondary-hue), 32%, 16%, 0.8);
+  --overlay-visibility: 0;
 
   // TYPOGRAPHY
   --biggest-font-size: 1.75rem;
@@ -47,6 +48,7 @@ body.light-theme {
   --body-color: hsl(var(--secondary-hue), 100%, 99%);
   --container-color: whitesmoke;
   --nav-color: hsla(var(--secondary-hue), 32%, 90%, 0.8);
+  --overlay-visibility: 0.75;
 }
 
 .light-theme {

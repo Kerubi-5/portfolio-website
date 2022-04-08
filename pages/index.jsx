@@ -26,6 +26,7 @@ export default function Home({ posts }) {
         loop
         src={`https:${posts[0].video.fields.file.url}`}
       />
+      <div className="home__overlay"></div>
       <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__data">
