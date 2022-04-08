@@ -52,7 +52,7 @@ const Works = ({ posts }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetchEntries("works");
   const posts = await res.map((p) => p.fields);
   return {
