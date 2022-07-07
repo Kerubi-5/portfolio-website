@@ -52,13 +52,14 @@ const Works = ({ posts }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetchEntries("works");
   const posts = await res.map((p) => p.fields);
   return {
     props: {
       posts,
     },
+    revalidate: 60 * 60 * 24, // 1 day
   };
 }
 
