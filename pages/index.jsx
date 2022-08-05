@@ -3,7 +3,6 @@ import { UilGithub } from "@iconscout/react-unicons";
 import { UilFacebook } from "@iconscout/react-unicons";
 import Link from "next/link";
 import Meta from "../components/Meta";
-import NaturalImage from "../components/NaturalImage";
 import ReactTypingEffect from "react-typing-effect";
 import { fetchEntries } from "../util/contentfulPosts";
 
@@ -18,13 +17,6 @@ export default function Home({ posts }) {
         ]}
         image="/assets/jkim.png"
         canonical="https://kkwebdev.xyz/"
-      />
-      <video
-        className="home__video"
-        autoPlay
-        muted
-        loop
-        src={`https:${posts[0].video.fields.file.url}`}
       />
       <div className="home__overlay"></div>
       <section className="home section" id="home">
