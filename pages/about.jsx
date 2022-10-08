@@ -25,28 +25,39 @@ const About = () => {
                 <UilAward className="about__icon" />
                 <h3 className="about__title">Education</h3>
                 <span className="about__subtitle">
-                  Bachelors in Information Technology
+                  Graduated in Polytechnic University of the Philippines with
+                  Latin Honors
                 </span>
               </div>
               <div className="about__box">
                 <UilHtml5 className="about__icon" />
                 <h3 className="about__title">Projects</h3>
-                <span className="about__subtitle">15+ Web Projects</span>
+                <span className="about__subtitle">
+                  I have developed 8 personal web projects so far using dabbling
+                  in both traditional and web3 and also created 4 projects in my
+                  work
+                </span>
               </div>
               <div className="about__box">
                 <UilFire className="about__icon" />
                 <h3 className="about__title">Passion</h3>
                 <span className="about__subtitle">
-                  A very passionate web developer
+                  Coding is my passion and I am always in the lookout to improve
+                  and sharpen my coding skills
                 </span>
               </div>
             </div>
 
             <p className="about_description">
-              I am looking for a position that would utilize my developer skills
-              which allows me to continue learning and hone my skills to provide
-              high-quality work, and encourages me to flourish as a professional
-              developer in the IT Field.
+              Hi my name is John Kim, and I use Kim as a nickname. I am a
+              fullstack web developer but mainly a front end developer. I am
+              passionate about video games, especially crpg games. I am
+              collecting video games in a video game digital distribution called
+              steam.
+              <br />
+              <br />
+              If you would like to connect with my steam account here is my
+              profile <a href="https://steamcommunity.com/id/kerubi5">Kerubi</a>
             </p>
           </div>
         </div>
