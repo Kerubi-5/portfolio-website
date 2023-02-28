@@ -11,7 +11,6 @@ const NaturalImage = (props) => {
       // set the dimension (affected by layout)
       width={200}
       height={200 / ratio}
-      layout="responsive" // you can use "responsive", "fill" or the default "intrinsic"
       onLoadingComplete={({ naturalWidth, naturalHeight }) =>
         setRatio(naturalWidth / naturalHeight)
       }
