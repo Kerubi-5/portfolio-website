@@ -18,11 +18,9 @@ const Works = ({ posts }) => {
           </div>
 
           <h3 className="work__title">{work.title}</h3>
-          <Link href={work.link}>
-            <a className="work__button" aria-label={work.title}>
-              Demo
-              <FiExternalLink />
-            </a>
+          <Link href={work.link} className="work__button" aria-label={work.title}>
+            Demo<FiExternalLink />
+
           </Link>
         </div>
       );

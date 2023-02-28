@@ -16,56 +16,56 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <header className="header" id="header">
       <nav className="nav container">
-        <Link href="/">
-          <a className="nav__logo" aria-label={"Logo"}>
+        <Link href="/" className="nav__logo" aria-label={"Logo"}>
+          
             KK
-          </a>
+          
         </Link>
 
         <div className="nav__menu">
           <ul className="nav__list">
             <li className="nav__item">
-              <Link href="/">
-                <a className={activeLink("/")} aria-label={"Landing Page"}>
-                  <UilEstate />
-                </a>
+              <Link href="/" className={activeLink("/")} aria-label={"Landing Page"}>
+
+                <UilEstate />
+
               </Link>
             </li>
             <li className="nav__item">
-              <Link href="/about">
-                <a className={activeLink("/about")} aria-label={"About me"}>
-                  <UilUser />
-                </a>
+              <Link href="/about" className={activeLink("/about")} aria-label={"About me"}>
+
+                <UilUser />
+
               </Link>
             </li>
             <li className="nav__item">
-              <Link href="/skills">
-                <a
-                  className={activeLink("/skills")}
-                  aria-label={"Skills and tech stacks"}
-                >
-                  <UilCrosshair />
-                </a>
+              <Link
+                href="/skills"
+                className={activeLink("/skills")}
+                aria-label={"Skills and tech stacks"}>
+
+                <UilCrosshair />
+
               </Link>
             </li>
             <li className="nav__item">
-              <Link href="/works">
-                <a
-                  className={activeLink("/works")}
-                  aria-label={"List of John Kim's works and projects"}
-                >
-                  <UilBriefcaseAlt />
-                </a>
+              <Link
+                href="/works"
+                className={activeLink("/works")}
+                aria-label={"List of John Kim's works and projects"}>
+
+                <UilBriefcaseAlt />
+
               </Link>
             </li>
             <li className="nav__item">
-              <Link href="/contact">
-                <a
-                  className={activeLink("/contact")}
-                  aria-label={"Contact form to send email to the owner"}
-                >
-                  <UilPhone />
-                </a>
+              <Link
+                href="/contact"
+                className={activeLink("/contact")}
+                aria-label={"Contact form to send email to the owner"}>
+
+                <UilPhone />
+
               </Link>
             </li>
           </ul>
