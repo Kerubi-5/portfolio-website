@@ -17,55 +17,54 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <header className="header" id="header">
       <nav className="nav container">
         <Link href="/" className="nav__logo" aria-label={"Logo"}>
-          
-            KK
-          
+          KK
         </Link>
 
         <div className="nav__menu">
           <ul className="nav__list">
             <li className="nav__item">
-              <Link href="/" className={activeLink("/")} aria-label={"Landing Page"}>
-
+              <Link
+                href="/"
+                className={activeLink("/")}
+                aria-label={"Landing Page"}
+              >
                 <UilEstate />
-
               </Link>
             </li>
             <li className="nav__item">
-              <Link href="/about" className={activeLink("/about")} aria-label={"About me"}>
-
+              <Link
+                href="/about"
+                className={activeLink("/about")}
+                aria-label={"About me"}
+              >
                 <UilUser />
-
               </Link>
             </li>
             <li className="nav__item">
               <Link
                 href="/skills"
                 className={activeLink("/skills")}
-                aria-label={"Skills and tech stacks"}>
-
+                aria-label={"Skills and tech stacks"}
+              >
                 <UilCrosshair />
-
               </Link>
             </li>
             <li className="nav__item">
               <Link
                 href="/works"
                 className={activeLink("/works")}
-                aria-label={"List of John Kim's works and projects"}>
-
+                aria-label={"List of John Kim's works and projects"}
+              >
                 <UilBriefcaseAlt />
-
               </Link>
             </li>
             <li className="nav__item">
               <Link
                 href="/contact"
                 className={activeLink("/contact")}
-                aria-label={"Contact form to send email to the owner"}>
-
+                aria-label={"Contact form to send email to the owner"}
+              >
                 <UilPhone />
-
               </Link>
             </li>
           </ul>

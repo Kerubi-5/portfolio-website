@@ -9,11 +9,6 @@ const NaturalImage = (props) => {
     <Image
       {...props}
       // set the dimension (affected by layout)
-      width={200}
-      height={200 / ratio}
-      onLoadingComplete={({ naturalWidth, naturalHeight }) =>
-        setRatio(naturalWidth / naturalHeight)
-      }
     />
   );
 };

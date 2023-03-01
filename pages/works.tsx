@@ -1,26 +1,31 @@
 import Meta from "../components/Meta";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
-import NaturalImage from "./../components/NaturalImage";
+import NaturalImage from "../components/NaturalImage";
 import { fetchEntries } from "../util/contentfulPosts";
 
 const Works = ({ posts }) => {
   const renderCards = () => {
     return posts.map((work) => {
-      console.log();
       return (
         <div className="work__card" key={work.title}>
           <div className="work__img">
             <NaturalImage
               src={`https:${work.screenshot.fields.file.url}`}
               alt={work.screenshot.fields.description}
+              width={work.screenshot.fields.file.details.image.width}
+              height={work.screenshot.fields.file.details.image.height}
             />
           </div>
 
           <h3 className="work__title">{work.title}</h3>
-          <Link href={work.link} className="work__button" aria-label={work.title}>
-            Demo<FiExternalLink />
-
+          <Link
+            href={work.link}
+            className="work__button"
+            aria-label={work.title}
+          >
+            Demo
+            <FiExternalLink />
           </Link>
         </div>
       );

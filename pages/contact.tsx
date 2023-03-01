@@ -7,7 +7,7 @@ import { UilWhatsapp } from "@iconscout/react-unicons";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>();
   const contactList = [
     {
       icon: <UilEnvelopeCheck className="contact__card-icon" />,
@@ -32,9 +32,9 @@ const Contact = () => {
     e.preventDefault();
     console.log();
     if (
-      !form.current.Name.value ||
-      !form.current.Message.value ||
-      !form.current.Email.value
+      form.current.Name.value ||
+      form.current.Message.value ||
+      form.current.Email.value
     )
       return alert("Must complete fields before submitting 🚫");
 
@@ -108,8 +108,8 @@ const Contact = () => {
               <textarea
                 placeholder="Message"
                 id=""
-                cols="0"
-                rows="10"
+                cols={0}
+                rows={10}
                 className="contact__input"
                 name="Message"
               ></textarea>
