@@ -2,7 +2,7 @@ import Meta from "../components/Meta";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import NaturalImage from "../components/NaturalImage";
-import { fetchEntries } from "../util/contentfulPosts";
+import fetchEntries from "../util/contentfulPosts";
 
 const Works = ({ posts }) => {
   const renderCards = () => {

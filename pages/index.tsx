@@ -4,7 +4,7 @@ import { UilFacebook } from "@iconscout/react-unicons";
 import Link from "next/link";
 import Meta from "../components/Meta";
 import ReactTypingEffect from "react-typing-effect";
-import { fetchEntries } from "../util/contentfulPosts";
+import fetchEntries from "../util/contentfulPosts";
 
 export default function Home({ posts }) {
   return (

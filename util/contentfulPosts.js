@@ -12,4 +12,4 @@ export async function fetchEntries(myContent) {
   console.log(`Error getting Entries for ${contentType.name}.`);
 }
 
-export default { fetchEntries };
+export default fetchEntries;
